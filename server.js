@@ -29,10 +29,12 @@ app.post('/api', async (req, res) => {
   res.json(vatCheck);
 });
 
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+app.listen(5000, () => {
+  console.log(`Server listening at http://localhost:5000`);
 });
+
+module.exports = app;
